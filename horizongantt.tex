@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 %
 % This is a direct copy of the codes in section 2.9 of the package
 % documentation (See page 45) https://mirrors.tuna.tsinghua.edu.cn/CTAN/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf 
@@ -11,15 +11,22 @@
 \usepackage{pgfgantt}
 \usepackage{xcolor}
 \usepackage{siunitx}
-\geometry{vmargin=1cm,paperheight=70cm,paperwidth=45cm}
+\geometry{vmargin=1cm,paperheight=55cm,paperwidth=41cm}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33} 
 
-\def\pgfcalendarmonthM#1{%
-\ifcase#1 M1\or M1\or M2\or M3\or M4\or M5\or M6\or M7\or M8\or M9\or M10\or M11\or M12\fi%
-}
+\definecolor{WP1}{RGB}{69, 82, 101}
+\definecolor{WP2}{RGB}{174, 207, 255} 
+\definecolor{WP3}{RGB}{255, 227, 77} 
+\definecolor{WP4}{RGB}{119, 119, 192} 
+\definecolor{WP5}{RGB}{218, 158, 255} 
+\definecolor{WP6}{RGB}{255, 66, 0} 
+\definecolor{WP7}{RGB}{82, 171, 69} 
+
+\newganttlinktypealias{fin-to-fin}{f-f}
+\setganttlinklabel{fin-to-fin}{}
 
 \begin{document}
 \begin{landscape}
@@ -29,8 +36,10 @@ hgrid,
 vgrid,
 y unit title=0.8cm,
 y unit chart=0.7cm,
-x unit= 10mm,
-milestone/.append style={xscale=0.42857142857}, % 0.6/1.4 ≈ 0.42857
+x unit= 17mm,
+milestone/.style={shape=ganttmilestone, inner sep=0pt, draw, fill=red},
+milestone/.append style={xscale=0.2}, % 0.6/1.4 ≈ 0.42857
+milestone inline label node/.append style={left=1mm},
 time slot format=isodate-yearmonth,
 time slot unit=month,
 bar label font=\normalsize\color{black!50},
@@ -40,62 +49,122 @@ group top shift=.6,
 group height=.3,
 group peaks height=.3,
 bar/.append style={draw=black, fill=groupblue},
-bar incomplete/.append style={fill=green}
-]{2022-01}{2025-03}
-\gantttitlecalendar{year,month=M,month=shortname} \\
-%\ganttbar[progress=100]{9 Month Review}{2022-02}{2025-02} \\
-%\ganttmilestone{9 Month Viva Voce}{2020-09} \\
-%\ganttset{progress label text={}, link/.style={black, -to}}
-\ganttgroup{WP1: Project management}{2022-02}{2025-02} \\
-    \ganttbar{WP1.1: Project coordination}{2022-02}{2025-02} \\
-    %\ganttlinkedbar[progress=100]{Measurements up to 160\si{\degreeCelsius} to validate the system against theoretical calculations of wave velocity change}{2020-12}{2021-02} \\
-    %\ganttlinkedbar[progress=100]{Excite higher order modes to validate their temperature sensitivities}{2021-03}{2021-06} \\
-    %\ganttbar[progress=27]{COMSOL modelling of measurement system (wedge transducer system, plate holes, and new transducer system)}{2021-3}{2022-5} \\
-    %\ganttbar[bar/.append style={fill=orange}]{Conference paper write-up}{2021-1}{2021-2} \\
-    \ganttmilestone{D1.1: Communication, reporting platform, and project management plan}{2022-04} \\
-    %\ganttbar[bar/.append style={fill=orange}]{18 Month review write-up}{2021-4}{2021-5} \\
-    %\ganttmilestone{18 Month Review Submission}{2021-05} \\
-\ganttgroup{WP2: Requirements Specification \& Overall System Modelling Strategy}{2022-02}{2023-05} \\
-    \ganttbar{WP2.1: Define the architecture of the HEP, power profiles and system parameters}{2022-02}{2022-08}\\
-    \ganttbar{WP2.2: Set up requirements for the digital twin of the aircraft}{2022-02}{2022-08}\\
-    \ganttbar{WP2.3: Map out and characterise the faults and degradation at system level}{2022-02}{2023-05}\\
-    \ganttbar{WP2.4: Creating guidelines on maintenance procedure for HEP}{2022-02}{2023-05}\\
-    \ganttbar{WP2.5: Requirement for life cycle assessment}{2022-02}{2023-05}\\
+bar incomplete/.append style={fill=green},
+WP1/.style={bar/.append style={draw=black, fill=WP1}},
+WP2/.style={bar/.append style={draw=black, fill=WP2}},
+WP3/.style={bar/.append style={draw=black, fill=WP3}},
+WP4/.style={bar/.append style={draw=black, fill=WP4}},
+WP5/.style={bar/.append style={draw=black, fill=WP5}},
+WP6/.style={bar/.append style={draw=black, fill=WP6}},
+WP7/.style={bar/.append style={draw=black, fill=WP7}}
+]{2022-01}{2023-02}
+
+\gantttitle{}{1} 
+\gantttitle{M1-3}{1} 
+\gantttitle{M4-6}{1} 
+\gantttitle{M7-9}{1} 
+\gantttitle{M10-12}{1} 
+\gantttitle{M13-15}{1} 
+\gantttitle{M16-18}{1} 
+\gantttitle{M19-21}{1} 
+\gantttitle{M22-24}{1} 
+\gantttitle{M25-27}{1} 
+\gantttitle{M28-30}{1} 
+\gantttitle{M31-33}{1} 
+\gantttitle{M34-36}{1} 
+\gantttitle{}{1}\\
+
+\ganttgroup{WP1: Project management}{2022-02}{2023-01} \\
+    \ganttbar[WP1]{WP1.1: Project coordination}{2022-02}{2023-01} \\
     
-\ganttgroup{WP3: Smart in-flight battery sensing}{2022-02}{2025-02} \\
-    \ganttbar{WP3.1: Specifications for sensors on energy storage system}{2022-02}{2022-9}\\
-    \ganttbar{WP3.2: In-operando monitor of the battery cell}{2022-10}{2024-06}\\
-    \ganttbar{WP3.3: Characterization and validation of the monitoring systems for energy storage}{2024-07}{2025-02}\\
+    \ganttmilestone[inline]{D1.1}{2022-02} 
+    \ganttmilestone[inline]{D1.2}{2022-03} \\
+    
+\ganttgroup{WP2: Requirements Specification \& Overall System Modelling Strategy}{2022-02}{2022-06} \\
+    \ganttbar[WP2]{WP2.1: Define the HEP}{2022-02}{2022-03}\\
+    \ganttbar[WP2]{WP2.2: Set up requirements for the HEP-Twin}{2022-02}{2022-03}\\
+        \ganttlink[link type=fin-to-fin]{elem5}{elem6}
+    \ganttbar[WP2]{WP2.3: Map out the faults and degradation }{2022-02}{2022-06}\\
+        \ganttlink[link type=fin-to-fin]{elem6}{elem7}
+    \ganttbar[WP2]{WP2.4: Creating guidelines on maintenance procedure for HEP}{2022-02}{2022-06}\\
+    \ganttbar[WP2]{WP2.5: Requirement for life cycle assessment}{2022-02}{2022-06}\\
 
-\ganttgroup{WP4: Integrated intelligent sensing for electric power distribution}{2022-02}{2025-02} \\
-    \ganttbar{WP4.1: State of the Art sensing systems for power electronics and electrical machines}{2022-02}{2022-07}\\
-    \ganttbar{WP4.2: Development of degradation and fault analysis models for multi-level inverters and associated components}{2022-02}{2022-07}\\
-    \ganttbar{WP4.3: Online temperature mapping with novel acoustic sensors}{2022-02}{2025-02}\\
-    \ganttbar{WP4.4: High voltage distribution modelling and faults analysis}{2022-02}{2025-02}\\
-    \ganttbar{WP4.5: Fault’s progression and degradation analysis of electrical machines and development of sensors}{2022-02}{2025-02}\\
-    \ganttbar{WP4.6: Development of artificial intelligence and machine learning based algorithms for fault detection and identification}{2022-02}{2025-02}\\
+    \ganttmilestone[inline]{D2.1}{2022-03} 
+    \ganttmilestone[inline]{D2.2/3}{2022-06}\\ 
+    
+\ganttgroup{WP3: Smart in-flight battery sensing}{2022-02}{2023-01} \\
+    \ganttbar[WP3]{WP3.1: Specifications for sensors on energy storage system}{2022-02}{2022-4}\\
+    \ganttbar[WP3]{WP3.2: In-operando monitor of the battery cell}{2022-05}{2022-11}\\
+            \ganttlink{elem13}{elem14}
+    \ganttbar[WP3]{WP3.3: Characterization and validation of the monitoring systems for energy storage}{2022-12}{2023-01}\\
+        \ganttlink{elem14}{elem15}
+    
+    \ganttmilestone[inline]{D3.1.1}{2022-03} 
+    \ganttmilestone[inline]{D3.1.2}{2022-04} 
+    \ganttmilestone[inline]{D3.2.1}{2022-07} 
+    \ganttmilestone[inline]{D3.2.2}{2022-11} \\
 
-\ganttgroup{WP5: Integrated HEP ground tests}{2022-02}{2025-02} \\
-    \ganttbar{WP5.1: Defining the specification of the test rig based on sizing and selecting the component}{2022-02}{2025-02}\\
-    \ganttbar{WP5.2: Design the demonstrator and demonstrator preparations}{2022-06}{2023-02}\\
-    \ganttbar{WP5.3: Create test cases, testing, and validation}{2023-02}{2025-02}\\
-    \ganttbar{WP5.4: Degradation emulator with Software and Hardware in the Loop}{2023-10}{2025-02}\\
+\ganttgroup{WP4: Integrated intelligent sensing for electric power distribution}{2022-02}{2023-01} \\
+    \ganttbar[WP4]{WP4.1: State of the Art sensing systems for power electronics and electrical machines}{2022-02}{2022-03}\\
+    \ganttbar[WP4]{WP4.2: Development of models for multi-level inverters}{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.3: Online temperature mapping with novel acoustic sensors}{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.4: High voltage distribution modelling and faults analysis}{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.5: Fault’s progression and degradation analysis of electrical machines and development of sensors}{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.6: Development of AI and MBSA for fault detection and identification }{2022-02}{2023-01}\\
+    
+    \ganttlink{elem21}{elem25}
+   
+    \ganttmilestone[inline]{D4.1}{2022-04} 
+    \ganttmilestone[inline]{D4.2/3/4/5}{2022-9} 
+    \ganttmilestone[inline]{D4.6}{2022-11} 
+    \ganttmilestone[inline]{D4.7}{2022-12} \\
 
-\ganttgroup{WP6: Digital-twin driven central decision making}{2022-02}{2025-02} \\
-    \ganttbar{WP6.1: Review existing standards and novel technologies and methodologies for data processing, communications, health and performance management in aircraft}{2022-02}{2022-09}\\
-    \ganttbar{WP6.2: Data standards for central decision making and communications}{2022-10}{2023-10}\\
-    \ganttbar{WP6.3: Create a design methodology for the central decision-making platform based on the lesson learnt during the integrated testing}{2023-04}{2025-02}\\
-    \ganttbar{WP6.4: Machine learning models to create the central decision-making system}{2023-04}{2025-02}\\
-    \ganttbar{WP6.5: Processing resources}{2022-10}{2023-10}\\
-    \ganttbar{WP6.6: Characterisation and validation of the models adopted for central decision-making system through case studies}{2023-10}{2025-02}\\
+\ganttgroup{WP5: Integrated HEP ground tests}{2022-02}{2023-01} \\
+    \ganttbar[WP5]{WP5.1: Defining the specification of the test rig based on sizing and selecting the component}{2022-02}{2022-03}\\
+    \ganttbar[WP5]{WP5.2: Design the demonstrator and demonstrator preparations}{2022-03}{2022-05}\\
+    \ganttbar[WP5]{WP5.3: Create test cases, testing, and validation}{2022-06}{2023-01}\\
+    \ganttbar[WP5]{WP5.4: Degradation emulator with Software and Hardware in the Loop}{2022-10}{2023-01}\\
+    
+    \ganttlink{elem32}{elem33}
+    \ganttlink{elem33}{elem34}
+    
+    \ganttlink[link type =fin-to-fin]{elem22}{elem35}
+    
+    \ganttmilestone[inline]{D5.1}{2022-04} 
+    \ganttmilestone[inline]{D5.2/3}{2022-6} 
+    \ganttmilestone[inline]{D5.4/5/6}{2022-12} \\
 
-\ganttgroup{WP7: Dissemination, communication \& exploitation}{2022-02}{2025-02} \\
-    \ganttbar{WP7.1: Dissemination \& Communication Plan and Activities}{2022-02}{2025-02}\\
-    \ganttbar{WP7.2: Exploitation Plan and Activities}{2022-02}{2025-02}\\
-    \ganttbar{WP7.3: Event organization}{2022-02}{2025-02}\\
+\ganttgroup{WP6: Digital-twin driven central decision making}{2022-02}{2023-01} \\
+    \ganttbar[WP6]{WP6.1: Review existing standards}{2022-02}{2022-04}\\
+    \ganttbar[WP6]{WP6.2: Data standards for CDM and communications}{2022-5}{2022-7}\\
+    \ganttbar[WP6]{WP6.3: Create a design methodology for the CDM}{2022-07}{2023-01}\\
+    \ganttbar[WP6]{WP6.4: Machine learning models to create the CDMS }{2022-07}{2023-01}\\
+    \ganttbar[WP6]{WP6.5: Processing resources}{2022-5}{2022-09}\\
+    \ganttbar[WP6]{WP6.6: Characterisation and validation of the models adopted for CDMS through case studies}{2022-10}{2023-01}\\
+    
+    \ganttlink{elem40}{elem41}
+    \ganttlink{elem41}{elem42}
+    
+    \ganttmilestone[inline]{D6.1}{2022-04} 
+    \ganttmilestone[inline]{D6.2/3}{2022-9} 
+    \ganttmilestone[inline]{D6.4/5}{2022-12} 
+    \ganttmilestone[inline]{D6.6}{2023-1} \\
+
+\ganttgroup{WP7: Dissemination, communication \& exploitation}{2022-02}{2023-01} \\
+    \ganttbar[WP7]{WP7.1: Dissemination \& Communication Plan and Activities}{2022-02}{2023-01}\\
+    \ganttbar[WP7]{WP7.2: Exploitation Plan and Activities}{2022-02}{2023-01}\\
+    \ganttbar[WP7]{WP7.3: Event organization}{2022-02}{2023-01}\\
+    
+    \ganttmilestone[inline]{D7.1}{2022-02} 
+    \ganttmilestone[inline]{D7.2}{2022-3} 
+    \ganttmilestone[inline]{D7.3/4/6}{2022-12}
+    \ganttmilestone[inline]{D7.3}{2022-4}
+    \ganttmilestone[inline]{D7.5/6}{2023-1} 
+    \ganttmilestone[inline]{D7.6}{2022-5}
+    \ganttmilestone[inline]{D7.6}{2022-8}
+    \ganttmilestone[inline]{D7.6}{2022-10}\\
 
 \end{ganttchart}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \end{landscape}
-
 \end{document}
