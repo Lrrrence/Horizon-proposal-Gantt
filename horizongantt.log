@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  3 SEP 2021 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  6 SEP 2021 13:29
 entering extended mode
 **"c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex"
 (c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07> (C:\Users\yulel\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\yulel\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Users\yulel\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
 \c@section=\count180
@@ -402,28 +402,28 @@ Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 LaTeX Info: Redefining \translate on input line 184.
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 24.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 35.
  (C:\Users\yulel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (horizongantt.aux)
 \openout1 = `horizongantt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 24.
+LaTeX Info: Redefining \selectfont on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -433,23 +433,23 @@ LaTeX Info: Redefining \selectfont on input line 24.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(192.05806pt, 896.25789pt, 192.05806pt)
-* v-part:(T,H,B)=(28.45274pt, 1934.78741pt, 28.45274pt)
-* \paperwidth=1280.37401pt
-* \paperheight=1991.6929pt
-* \textwidth=896.25789pt
-* \textheight=1934.78741pt
-* \oddsidemargin=119.78807pt
-* \evensidemargin=119.78807pt
+* h-part:(L,W,R)=(234.73763pt, 1095.42632pt, 234.73763pt)
+* v-part:(T,H,B)=(28.45274pt, 1223.46852pt, 28.45274pt)
+* \paperwidth=1564.90157pt
+* \paperheight=1280.37401pt
+* \textwidth=1095.42632pt
+* \textheight=1223.46852pt
+* \oddsidemargin=162.46764pt
+* \evensidemargin=162.46764pt
 * \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -483,25 +483,29 @@ File: siunitx-abbreviations.cfg 2021-04-17 v2.8e siunitx: Abbreviated units
 Dictionary: translator-basic-dictionary, Language: English 
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 24.
+(Font)              <12> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 24.
+(Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 24.
- [1
+(Font)              <6> on input line 35.
 
+Overfull \hbox (105.24016pt too wide) in paragraph at lines 173--175
+[][] 
+ []
+
+[1
 
 {C:/Users/yulel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (horizongantt.aux) ) 
 Here is how much of TeX's memory you used:
- 17740 strings out of 479173
- 397426 string characters out of 2854168
- 743251 words of memory out of 3000000
- 35047 multiletter control sequences out of 15000+600000
- 419442 words of font info for 51 fonts, out of 8000000 for 9000
+ 17941 strings out of 479173
+ 400570 string characters out of 2854168
+ 727757 words of memory out of 3000000
+ 35246 multiletter control sequences out of 15000+600000
+ 422793 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,7n,103p,487b,874s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,7n,103p,487b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on horizongantt.pdf (1 page, 53527 bytes).
+Output written on horizongantt.pdf (1 page, 50364 bytes).
 PDF statistics:
  22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

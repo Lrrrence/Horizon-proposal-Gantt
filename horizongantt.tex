@@ -11,7 +11,7 @@
 \usepackage{pgfgantt}
 \usepackage{xcolor}
 \usepackage{siunitx}
-\geometry{vmargin=1cm,paperheight=55cm,paperwidth=41cm}
+\geometry{vmargin=1cm,paperheight=45cm,paperwidth=55cm}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
@@ -19,18 +19,20 @@
 
 \definecolor{WP1}{RGB}{69, 82, 101}
 \definecolor{WP2}{RGB}{174, 207, 255} 
-\definecolor{WP3}{RGB}{255, 227, 77} 
-\definecolor{WP4}{RGB}{119, 119, 192} 
+\definecolor{WP3}{RGB}{255, 250, 77} 
+\definecolor{WP3exp}{RGB}{216, 191, 64} 
+\definecolor{WP4}{RGB}{158, 158, 255} 
+\definecolor{WP4exp}{RGB}{71, 71, 115} 
 \definecolor{WP5}{RGB}{218, 158, 255} 
-\definecolor{WP6}{RGB}{255, 66, 0} 
+\definecolor{WP5exp}{RGB}{152, 110, 178} 
+\definecolor{WP6}{RGB}{255, 133, 86} 
+\definecolor{WP6exp}{RGB}{178, 46, 0} 
 \definecolor{WP7}{RGB}{82, 171, 69} 
 
 \newganttlinktypealias{fin-to-fin}{f-f}
 \setganttlinklabel{fin-to-fin}{}
 
 \begin{document}
-\begin{landscape}
-\centering
 \begin{ganttchart}[
 hgrid,
 vgrid,
@@ -53,9 +55,13 @@ bar incomplete/.append style={fill=green},
 WP1/.style={bar/.append style={draw=black, fill=WP1}},
 WP2/.style={bar/.append style={draw=black, fill=WP2}},
 WP3/.style={bar/.append style={draw=black, fill=WP3}},
+WP3exp/.style={bar/.append style={draw=black, fill=WP3exp}},
 WP4/.style={bar/.append style={draw=black, fill=WP4}},
+WP4exp/.style={bar/.append style={draw=black, fill=WP4exp}},
 WP5/.style={bar/.append style={draw=black, fill=WP5}},
+WP5exp/.style={bar/.append style={draw=black, fill=WP5exp}},
 WP6/.style={bar/.append style={draw=black, fill=WP6}},
+WP6exp/.style={bar/.append style={draw=black, fill=WP6exp}},
 WP7/.style={bar/.append style={draw=black, fill=WP7}}
 ]{2022-01}{2023-02}
 
@@ -94,9 +100,9 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     
 \ganttgroup{WP3: Smart in-flight battery sensing}{2022-02}{2023-01} \\
     \ganttbar[WP3]{WP3.1: Specifications for sensors on energy storage system}{2022-02}{2022-4}\\
-    \ganttbar[WP3]{WP3.2: In-operando monitor of the battery cell}{2022-05}{2022-11}\\
+    \ganttbar[WP3exp]{WP3.2: In-operando monitor of the battery cell}{2022-05}{2022-11}\\
             \ganttlink{elem13}{elem14}
-    \ganttbar[WP3]{WP3.3: Characterization and validation of the monitoring systems for energy storage}{2022-12}{2023-01}\\
+    \ganttbar[WP3exp]{WP3.3: Characterization and validation of the monitoring systems for energy storage}{2022-12}{2023-01}\\
         \ganttlink{elem14}{elem15}
     
     \ganttmilestone[inline]{D3.1.1}{2022-03} 
@@ -106,10 +112,10 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
 
 \ganttgroup{WP4: Integrated intelligent sensing for electric power distribution}{2022-02}{2023-01} \\
     \ganttbar[WP4]{WP4.1: State of the Art sensing systems for power electronics and electrical machines}{2022-02}{2022-03}\\
-    \ganttbar[WP4]{WP4.2: Development of models for multi-level inverters}{2022-02}{2023-01}\\
-    \ganttbar[WP4]{WP4.3: Online temperature mapping with novel acoustic sensors}{2022-02}{2023-01}\\
-    \ganttbar[WP4]{WP4.4: High voltage distribution modelling and faults analysis}{2022-02}{2023-01}\\
-    \ganttbar[WP4]{WP4.5: Fault’s progression and degradation analysis of electrical machines and development of sensors}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.2: Development of models for multi-level inverters}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.3: Online temperature mapping with novel acoustic sensors}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.4: High voltage distribution modelling and faults analysis}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.5: Fault’s progression and degradation analysis of electrical machines and development of sensors}{2022-02}{2023-01}\\
     \ganttbar[WP4]{WP4.6: Development of AI and MBSA for fault detection and identification }{2022-02}{2023-01}\\
     
     \ganttlink{elem21}{elem25}
@@ -121,9 +127,9 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
 
 \ganttgroup{WP5: Integrated HEP ground tests}{2022-02}{2023-01} \\
     \ganttbar[WP5]{WP5.1: Defining the specification of the test rig based on sizing and selecting the component}{2022-02}{2022-03}\\
-    \ganttbar[WP5]{WP5.2: Design the demonstrator and demonstrator preparations}{2022-03}{2022-05}\\
-    \ganttbar[WP5]{WP5.3: Create test cases, testing, and validation}{2022-06}{2023-01}\\
-    \ganttbar[WP5]{WP5.4: Degradation emulator with Software and Hardware in the Loop}{2022-10}{2023-01}\\
+    \ganttbar[WP5exp]{WP5.2: Design the demonstrator and demonstrator preparations}{2022-03}{2022-05}\\
+    \ganttbar[WP5exp]{WP5.3: Create test cases, testing, and validation}{2022-06}{2023-01}\\
+    \ganttbar[WP5exp]{WP5.4: Degradation emulator with Software and Hardware in the Loop}{2022-10}{2023-01}\\
     
     \ganttlink{elem32}{elem33}
     \ganttlink{elem33}{elem34}
@@ -140,7 +146,7 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttbar[WP6]{WP6.3: Create a design methodology for the CDM}{2022-07}{2023-01}\\
     \ganttbar[WP6]{WP6.4: Machine learning models to create the CDMS }{2022-07}{2023-01}\\
     \ganttbar[WP6]{WP6.5: Processing resources}{2022-5}{2022-09}\\
-    \ganttbar[WP6]{WP6.6: Characterisation and validation of the models adopted for CDMS through case studies}{2022-10}{2023-01}\\
+    \ganttbar[WP6exp]{WP6.6: Characterisation and validation of the models adopted for CDMS through case studies}{2022-10}{2023-01}\\
     
     \ganttlink{elem40}{elem41}
     \ganttlink{elem41}{elem42}
@@ -166,5 +172,4 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
 
 \end{ganttchart}
 %\thispagestyle{empty}
-\end{landscape}
 \end{document}
