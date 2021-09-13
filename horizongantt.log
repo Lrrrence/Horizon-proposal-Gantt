@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  6 SEP 2021 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  13 SEP 2021 10:37
 entering extended mode
 **"c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex"
 (c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex
@@ -434,14 +434,14 @@ LaTeX Info: Redefining \selectfont on input line 35.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(234.73763pt, 1095.42632pt, 234.73763pt)
-* v-part:(T,H,B)=(28.45274pt, 1223.46852pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 995.84645pt, 0.0pt)
 * \paperwidth=1564.90157pt
-* \paperheight=1280.37401pt
+* \paperheight=995.84645pt
 * \textwidth=1095.42632pt
-* \textheight=1223.46852pt
+* \textheight=995.84645pt
 * \oddsidemargin=162.46764pt
 * \evensidemargin=162.46764pt
-* \topmargin=-80.81725pt
+* \topmargin=-109.26999pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -489,23 +489,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 35.
 
-Overfull \hbox (105.24016pt too wide) in paragraph at lines 173--175
-[][] 
+Overfull \hbox (177.90135pt too wide) in paragraph at lines 177--179
+ [][] 
  []
 
 [1
 
 {C:/Users/yulel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (horizongantt.aux) ) 
 Here is how much of TeX's memory you used:
- 17941 strings out of 479173
- 400570 string characters out of 2854168
- 727757 words of memory out of 3000000
- 35246 multiletter control sequences out of 15000+600000
+ 17970 strings out of 479173
+ 401105 string characters out of 2854168
+ 731477 words of memory out of 3000000
+ 35275 multiletter control sequences out of 15000+600000
  422793 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,103p,487b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on horizongantt.pdf (1 page, 50364 bytes).
+Output written on horizongantt.pdf (1 page, 50920 bytes).
 PDF statistics:
  22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

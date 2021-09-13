@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1630931374 "c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex" "horizongantt.pdf" "horizongantt" 1630931377
+["pdflatex"] 1631525831 "c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex" "horizongantt.pdf" "horizongantt" 1631525833
   "C:/Users/yulel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1630694698 9557844 50a7b578a6d70baccc7a78f8b5aeb4ee ""
   "C:/Users/yulel/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1630670758 347615 6e7690f96d8b2000c175ae6088dcf7a5 ""
   "C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -142,10 +142,10 @@
   "C:/Users/yulel/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator-basic-dictionary-English.dict" 1596563592 3535 7dc96051305a7e943219126c49c44cd6 ""
   "C:/Users/yulel/AppData/Local/Programs/MiKTeX/tex/latex/translator/translator.sty" 1596563646 8765 3368c4a5a4b5466261cafb836195e916 ""
   "C:/Users/yulel/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex" 1630931373 7871 c28296af6d5ac7e6a56c421082f45384 ""
-  "horizongantt.aux" 1630931376 68 62765a98f170a886ffd76c48f5071450 "pdflatex"
-  "horizongantt.tex" 1630931373 7871 c28296af6d5ac7e6a56c421082f45384 ""
+  "c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex" 1631525830 8260 e06387e4d11178bd70dbc459eeddc7bc ""
+  "horizongantt.aux" 1631525833 68 7f31f44e157d13961829bfc7e54e165e "pdflatex"
+  "horizongantt.tex" 1631525830 8260 e06387e4d11178bd70dbc459eeddc7bc ""
   (generated)
-  "horizongantt.pdf"
-  "horizongantt.aux"
   "horizongantt.log"
+  "horizongantt.aux"
+  "horizongantt.pdf"

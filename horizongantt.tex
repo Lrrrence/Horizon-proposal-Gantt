@@ -11,7 +11,7 @@
 \usepackage{pgfgantt}
 \usepackage{xcolor}
 \usepackage{siunitx}
-\geometry{vmargin=1cm,paperheight=45cm,paperwidth=55cm}
+\geometry{vmargin=0cm,paperheight=35cm,paperwidth=55cm}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
@@ -20,11 +20,11 @@
 \definecolor{WP1}{RGB}{69, 82, 101}
 \definecolor{WP2}{RGB}{174, 207, 255} 
 \definecolor{WP3}{RGB}{255, 250, 77} 
-\definecolor{WP3exp}{RGB}{216, 191, 64} 
-\definecolor{WP4}{RGB}{158, 158, 255} 
-\definecolor{WP4exp}{RGB}{71, 71, 115} 
+\definecolor{WP3exp}{RGB}{164, 145, 48} 
+\definecolor{WP4}{RGB}{81, 226, 221} 
+\definecolor{WP4exp}{RGB}{34, 98, 96} 
 \definecolor{WP5}{RGB}{218, 158, 255} 
-\definecolor{WP5exp}{RGB}{152, 110, 178} 
+\definecolor{WP5exp}{RGB}{108, 78, 126} 
 \definecolor{WP6}{RGB}{255, 133, 86} 
 \definecolor{WP6exp}{RGB}{178, 46, 0} 
 \definecolor{WP7}{RGB}{82, 171, 69} 
@@ -33,6 +33,7 @@
 \setganttlinklabel{fin-to-fin}{}
 
 \begin{document}
+\centering
 \begin{ganttchart}[
 hgrid,
 vgrid,
@@ -90,10 +91,10 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttbar[WP2]{WP2.1: Define the HEP}{2022-02}{2022-03}\\
     \ganttbar[WP2]{WP2.2: Set up requirements for the HEP-Twin}{2022-02}{2022-03}\\
         \ganttlink[link type=fin-to-fin]{elem5}{elem6}
-    \ganttbar[WP2]{WP2.3: Map out the faults and degradation }{2022-02}{2022-06}\\
+    \ganttbar[WP2]{WP2.3: Map out the faults and degradation}{2022-02}{2022-06}\\
         \ganttlink[link type=fin-to-fin]{elem6}{elem7}
     \ganttbar[WP2]{WP2.4: Creating guidelines on maintenance procedure for HEP}{2022-02}{2022-06}\\
-    \ganttbar[WP2]{WP2.5: Requirement for life cycle assessment}{2022-02}{2022-06}\\
+    \ganttbar[WP2]{WP2.5: Requirement for life assessment for digital twin}{2022-02}{2022-06}\\
 
     \ganttmilestone[inline]{D2.1}{2022-03} 
     \ganttmilestone[inline]{D2.2/3}{2022-06}\\ 
@@ -105,20 +106,22 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttbar[WP3exp]{WP3.3: Characterization and validation of the monitoring systems for energy storage}{2022-12}{2023-01}\\
         \ganttlink{elem14}{elem15}
     
-    \ganttmilestone[inline]{D3.1.1}{2022-03} 
-    \ganttmilestone[inline]{D3.1.2}{2022-04} 
-    \ganttmilestone[inline]{D3.2.1}{2022-07} 
-    \ganttmilestone[inline]{D3.2.2}{2022-11} \\
+    \ganttmilestone[inline]{D3.1}{2022-03} 
+    \ganttmilestone[inline]{D3.2}{2022-04} 
+    \ganttmilestone[inline]{D3.3}{2022-07} 
+    \ganttmilestone[inline]{D3.4}{2022-11} 
+    \ganttmilestone[inline]{D3.5}{2023-01} \\
 
 \ganttgroup{WP4: Integrated intelligent sensing for electric power distribution}{2022-02}{2023-01} \\
     \ganttbar[WP4]{WP4.1: State of the Art sensing systems for power electronics and electrical machines}{2022-02}{2022-03}\\
-    \ganttbar[WP4exp]{WP4.2: Development of models for multi-level inverters}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.2: Development of degradation and fault analysis models for multi-level inverters and associated components}{2022-02}{2023-01}\\
     \ganttbar[WP4exp]{WP4.3: Online temperature mapping with novel acoustic sensors}{2022-02}{2023-01}\\
-    \ganttbar[WP4exp]{WP4.4: High voltage distribution modelling and faults analysis}{2022-02}{2023-01}\\
+    \ganttbar[WP4exp]{WP4.4: High voltage cables diagnostic and prognostic evaluations}{2022-02}{2023-01}\\
     \ganttbar[WP4exp]{WP4.5: Fault’s progression and degradation analysis of electrical machines and development of sensors}{2022-02}{2023-01}\\
-    \ganttbar[WP4]{WP4.6: Development of AI and MBSA for fault detection and identification }{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.6: Development of AI and MBSA for fault detection and identification}{2022-02}{2023-01}\\
+    \ganttbar[WP4]{WP4.7: Offline and online stochastic reliability model deployment and system-level PHASED research impact assessment}{2022-02}{2023-01}\\
     
-    \ganttlink{elem21}{elem25}
+    \ganttlink{elem22}{elem26}
    
     \ganttmilestone[inline]{D4.1}{2022-04} 
     \ganttmilestone[inline]{D4.2/3/4/5}{2022-9} 
@@ -131,10 +134,10 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttbar[WP5exp]{WP5.3: Create test cases, testing, and validation}{2022-06}{2023-01}\\
     \ganttbar[WP5exp]{WP5.4: Degradation emulator with Software and Hardware in the Loop}{2022-10}{2023-01}\\
     
-    \ganttlink{elem32}{elem33}
-    \ganttlink{elem33}{elem34}
+    \ganttlink{elem34}{elem35}
+    \ganttlink{elem35}{elem36}
     
-    \ganttlink[link type =fin-to-fin]{elem22}{elem35}
+    \ganttlink[link type =fin-to-fin]{elem23}{elem37}
     
     \ganttmilestone[inline]{D5.1}{2022-04} 
     \ganttmilestone[inline]{D5.2/3}{2022-6} 
@@ -144,12 +147,13 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttbar[WP6]{WP6.1: Review existing standards}{2022-02}{2022-04}\\
     \ganttbar[WP6]{WP6.2: Data standards for CDM and communications}{2022-5}{2022-7}\\
     \ganttbar[WP6]{WP6.3: Create a design methodology for the CDM}{2022-07}{2023-01}\\
-    \ganttbar[WP6]{WP6.4: Machine learning models to create the CDMS }{2022-07}{2023-01}\\
-    \ganttbar[WP6]{WP6.5: Processing resources}{2022-5}{2022-09}\\
-    \ganttbar[WP6exp]{WP6.6: Characterisation and validation of the models adopted for CDMS through case studies}{2022-10}{2023-01}\\
+    \ganttbar[WP6]{WP6.4: Integrated real time virtual load sensors development for the engine}{2022-07}{2023-01}\\
+    \ganttbar[WP6]{WP6.5: Machine learning models to create the CDMS }{2022-07}{2023-01}\\
+    \ganttbar[WP6]{WP6.6: Processing resources}{2022-5}{2022-09}\\
+    \ganttbar[WP6exp]{WP6.7: Characterisation and validation of the models adopted for CDMS through case studies}{2022-10}{2023-01}\\
     
-    \ganttlink{elem40}{elem41}
-    \ganttlink{elem41}{elem42}
+    \ganttlink{elem42}{elem43}
+    \ganttlink{elem43}{elem44}
     
     \ganttmilestone[inline]{D6.1}{2022-04} 
     \ganttmilestone[inline]{D6.2/3}{2022-9} 
