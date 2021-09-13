@@ -11,7 +11,7 @@
 \usepackage{pgfgantt}
 \usepackage{xcolor}
 \usepackage{siunitx}
-\geometry{vmargin=0cm,paperheight=35cm,paperwidth=55cm}
+\geometry{vmargin=1cm,paperheight=35cm,paperwidth=55cm}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
@@ -31,6 +31,20 @@
 
 \newganttlinktypealias{fin-to-fin}{f-f}
 \setganttlinklabel{fin-to-fin}{}
+
+\newganttchartelement*{mymilestone}{
+mymilestone/.style={
+    fill=blue,
+    shape=rectangle,
+    xscale=0.18,
+    right=7mm
+    },
+mymilestone label font=\slshape,
+mymilestone left shift=0pt,
+mymilestone right shift=0pt,
+mymilestone inline label node/.append style={below=0.3mm},
+mymilestone label font=\footnotesize
+}
 
 \begin{document}
 \centering
@@ -173,6 +187,14 @@ WP7/.style={bar/.append style={draw=black, fill=WP7}}
     \ganttmilestone[inline]{D7.6}{2022-5}
     \ganttmilestone[inline]{D7.6}{2022-8}
     \ganttmilestone[inline]{D7.6}{2022-10}\\
+
+\ganttmymilestone[inline]{MS1/5/10}{2022-5}
+\ganttmymilestone[inline]{MS1/6/7/10}{2022-9}
+\ganttmymilestone[inline]{MS1/9/12}{2023-1}
+\ganttmymilestone[inline]{MS2}{2022-6}
+\ganttmymilestone[inline]{MS3}{2022-11}
+\ganttmymilestone[inline]{MS4/10/11}{2022-12}
+\ganttmymilestone[inline]{MS8}{2022-10}\\
 
 \end{ganttchart}
 %\thispagestyle{empty}

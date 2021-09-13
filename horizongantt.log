@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  13 SEP 2021 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.9.3)  13 SEP 2021 12:17
 entering extended mode
 **"c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex"
 (c:/Users/yulel/Documents/LaTeX/Horizon proposal Gantt/horizongantt.tex
@@ -402,28 +402,28 @@ Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
 Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 LaTeX Info: Redefining \translate on input line 184.
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 35.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 49.
  (C:\Users\yulel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (horizongantt.aux)
 \openout1 = `horizongantt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 35.
+LaTeX Info: Redefining \selectfont on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -434,14 +434,14 @@ LaTeX Info: Redefining \selectfont on input line 35.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(234.73763pt, 1095.42632pt, 234.73763pt)
-* v-part:(T,H,B)=(0.0pt, 995.84645pt, 0.0pt)
+* v-part:(T,H,B)=(28.45274pt, 938.94096pt, 28.45274pt)
 * \paperwidth=1564.90157pt
 * \paperheight=995.84645pt
 * \textwidth=1095.42632pt
-* \textheight=995.84645pt
+* \textheight=938.94096pt
 * \oddsidemargin=162.46764pt
 * \evensidemargin=162.46764pt
-* \topmargin=-109.26999pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -483,31 +483,34 @@ File: siunitx-abbreviations.cfg 2021-04-17 v2.8e siunitx: Abbreviated units
 Dictionary: translator-basic-dictionary, Language: English 
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 35.
+(Font)              <12> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+(Font)              <6> on input line 49.
 
-Overfull \hbox (177.90135pt too wide) in paragraph at lines 177--179
+Overfull \hbox (177.90135pt too wide) in paragraph at lines 199--201
  [][] 
  []
 
 [1
 
-{C:/Users/yulel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (horizongantt.aux) ) 
+{C:/Users/yulel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Overfull \vbox (4.16675pt too high) has occurred while \output is active []
+
+ [2] (horizongantt.aux) ) 
 Here is how much of TeX's memory you used:
- 17970 strings out of 479173
- 401105 string characters out of 2854168
- 731477 words of memory out of 3000000
- 35275 multiletter control sequences out of 15000+600000
- 422793 words of font info for 53 fonts, out of 8000000 for 9000
+ 18050 strings out of 479173
+ 402988 string characters out of 2854168
+ 741409 words of memory out of 3000000
+ 35354 multiletter control sequences out of 15000+600000
+ 425515 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,103p,487b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/yulel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on horizongantt.pdf (1 page, 50920 bytes).
+Output written on horizongantt.pdf (2 pages, 52014 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
